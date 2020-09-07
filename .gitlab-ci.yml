@@ -105,7 +105,7 @@ App_deploy:
     when: manual
     script:
         #Login
-        - echo ${SFDX_URL} > env.sfdx
+        - echo ${!SFDX_URL} > env.sfdx
         - sfdx force:auth:sfdxurl:store -s -a app_deploy -f env.sfdx
         - rm -rf env.sfdx
         - export PACKAGE_VERSION_ID=`cat ./PACKAGE_VERSION_ID.TXT`
