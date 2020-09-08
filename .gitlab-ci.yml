@@ -1,6 +1,6 @@
 #Define a Default Image which would be used for all the stages
 default:
-  image: 92sgupta/vlocity_sfdx_tools:v1.0
+  image: jfgarcia268/sfdx_vlocity_java:latest
 #
 # Define the stages of our pipeline
 #
